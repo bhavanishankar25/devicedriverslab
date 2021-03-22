@@ -1,0 +1,1 @@
+cmd_/home/bhavani/ddlab/lab2/lab6/simple_char_drv.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id=sha1  -T ./scripts/module-common.lds -o /home/bhavani/ddlab/lab2/lab6/simple_char_drv.ko /home/bhavani/ddlab/lab2/lab6/simple_char_drv.o /home/bhavani/ddlab/lab2/lab6/simple_char_drv.mod.o;  true
