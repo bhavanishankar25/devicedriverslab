@@ -23,6 +23,12 @@ This command will call init_module() which is called when the module is inserted
 bhavani@pspk:~/ddlab/Endsem/a$ sudo rmmod integer.ko
 ```
 This command will call cleanup_module() which is called just before the module is unloaded from the kernel.
+
+```
+bhavani@pspk:~/ddlab/Endsem/a$ dmesg|tail -1
+```
+Syslog-output-Please refer below screenshot.
+
 # Ouput(a)
 ![a_output](https://user-images.githubusercontent.com/47072061/114825375-c4cf7780-9de3-11eb-894b-74b98dee688b.png)
 
