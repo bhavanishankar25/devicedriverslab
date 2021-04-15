@@ -25,8 +25,9 @@ This command will call cleanup_module() which is called just before the module i
 bhavani@pspk:~/ddlab/Endsem/b$ dmesg|tail -1
 
 ```
-Syslog
+Syslog-for output-please refer below screenshot.
 
 # Ouput
-![Screenshot](output(b).JPG)
+![b_output](https://user-images.githubusercontent.com/47072061/114826457-293f0680-9de5-11eb-89c4-e4b4d40756d4.png)
+
 This is kernel log when module is loaded printing the message.
