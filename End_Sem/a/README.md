@@ -1,9 +1,7 @@
 # FINAL PRACTICE EXAM
 (a) Write a module that can take an integer parameter when it is loaded with insmod command.
 
-AND
 
-(b) Write a module which prints your name in log.
 
 # Overview
 ## (a) 
@@ -13,36 +11,19 @@ Kernel modules can be passed command line arguements during module insertion jus
 
 In order to compile and build the integer module; we need to create a Makefile.
 ```
-krishna@krishna:~/Desktop/DD/ENDSEM/a$ make
+bhavani@pspk:~/ddlab/Endsem/a$ make
 ```
 This commmand is used to compile the souce code integer.c to create a module called integer.ko with integer parameter as shown below
 ```
-krishna@krishna:~/Desktop/DD/ENDSEM/a$ sudo insmod integer.ko count=115
+bhavani@pspk:~/ddlab/Endsem/a$ sudo insmod integer.ko count=118
+
 ```
 This command will call init_module() which is called when the module is inserted into the kernel or loaded to the kernel and pass the command line parameter.
 ```
-krishna@krishna:~/Desktop/DD/ENDSEM/a$ sudo rmmod integer.ko
+bhavani@pspk:~/ddlab/Endsem/a$ sudo rmmod integer.ko
 ```
 This command will call cleanup_module() which is called just before the module is unloaded from the kernel.
 # Ouput(a)
 ![Screenshot](output(a).JPG)
 This is kernel log when module is loaded printing the message.
 
-## (b)
-# Overview
-We have implemented name.c program which will be compiled as a kernel module. This module will print my name as kernal log when we load the module and will also print a message and then unloaded the module.
-```
-krishna@krishna:~/Desktop/DD/ENDSEM/b$ make
-```
-This commmand is used to compile the souce code name.c to create a module called name.ko
-```
-krishna@krishna:~/Desktop/DD/ENDSEM/b$ sudo insmod name.ko
-```
-This command will call init_module() which is called when the module is inserted into the kernel or loaded to the kernel.
-```
-krishna@krishna:~/Desktop/DD/ENDSEM/b$ sudo rmmod name.ko
-```
-This command will call cleanup_module() which is called just before the module is unloaded from the kernel.
-# Ouput
-![Screenshot](output(b).JPG)
-This is kernel log when module is loaded printing the message.
