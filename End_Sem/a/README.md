@@ -26,5 +26,8 @@ This command will call cleanup_module() which is called just before the module i
 # Ouput(a)
 ![a_output](https://user-images.githubusercontent.com/47072061/114825375-c4cf7780-9de3-11eb-894b-74b98dee688b.png)
 
+![a_rm_output](https://user-images.githubusercontent.com/47072061/114825630-18da5c00-9de4-11eb-92fd-4ee2f444eea5.png)
+
+
 This is kernel log when module is loaded printing the message.[output]
 
