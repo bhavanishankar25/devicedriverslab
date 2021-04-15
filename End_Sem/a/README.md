@@ -24,6 +24,6 @@ bhavani@pspk:~/ddlab/Endsem/a$ sudo rmmod integer.ko
 ```
 This command will call cleanup_module() which is called just before the module is unloaded from the kernel.
 # Ouput(a)
-![Screenshot](output(a).JPG)
+![Screenshot](a_output.JPG)
 This is kernel log when module is loaded printing the message.
 
